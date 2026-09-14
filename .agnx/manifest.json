@@ -1,0 +1,55 @@
+{
+  "id": "sandbox",
+  "name": "Host SDK 指南",
+  "version": "0.1.0",
+  "description": "WorkspaceAppHostApi 分区探针：host.ui / config / tools / lifecycle 等；notification 仅为 host.ui 子集",
+  "main": "./src/index.ts",
+  "contributes": {
+    "commands": [
+      {
+        "id": "host-sandbox.open",
+        "title": "Host 沙盒",
+        "keywords": [
+          "host",
+          "sandbox",
+          "notification",
+          "progress",
+          "沙盒",
+          "宿主"
+        ]
+      }
+    ],
+    "panels": [
+      {
+        "id": "host-sandbox.main",
+        "title": "Host 沙盒",
+        "component": "sandbox-panel"
+      }
+    ],
+    "tools": [
+      {
+        "id": "progress-demo",
+        "title": "Progress Demo",
+        "description": "向 stderr 输出 PROGRESS: 行，供 run tool 流式上报",
+        "script": "tools/progress-demo.mjs"
+      }
+    ],
+    "agentTools": [
+      {
+        "name": "host_sandbox_ping",
+        "description": "Host 沙盒探针：回显输入并可选触发 notification",
+        "inputSchema": {
+          "type": "object",
+          "properties": {
+            "message": {
+              "type": "string"
+            },
+            "notify": {
+              "type": "boolean"
+            }
+          }
+        }
+      }
+    ]
+  }
+}
