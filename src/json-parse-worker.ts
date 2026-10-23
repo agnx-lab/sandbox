@@ -1,5 +1,5 @@
 // 场景：Host SDK 指南 — 真实 Web Worker 探针（JSON 解析），配合 host.worker.observe。
-import type { WorkspaceAppHostApi } from "@getagnx/app-sdk";
+import type { WorkspaceAppHostApi } from "@agnx-lab/app-sdk";
 
 const WORKER_SOURCE = `
 self.addEventListener("message", (event) => {

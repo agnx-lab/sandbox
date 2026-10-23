@@ -1,4 +1,4 @@
-import type { WorkspaceAppHostApi } from "@getagnx/app-sdk";
+import type { WorkspaceAppHostApi } from "@agnx-lab/app-sdk";
 import { HOST_SANDBOX_APP_ID } from "./constants";
 
 export interface HostSandboxPingInput {

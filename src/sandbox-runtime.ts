@@ -1,5 +1,5 @@
 // 场景：Host 沙盒运行时状态 — lifecycle/tabs 事件采样（供面板只读展示）。
-import type { WorkspaceAppHostApi } from "@getagnx/app-sdk";
+import type { WorkspaceAppHostApi } from "@agnx-lab/app-sdk";
 import { HOST_SANDBOX_APP_ID } from "./constants";
 import { appendHostSandboxEventLog } from "./sandbox-event-log";
 

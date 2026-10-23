@@ -10,7 +10,7 @@ import {
 } from "react";
 import { ScrollView, Text, useWindowDimensions, View } from "react-native";
 import { StyleSheet, useUnistyles } from "react-native-unistyles";
-import type { WorkspaceAppHostApi, WorkspaceAppBrandLogoLoaderPanelProps } from "@getagnx/app-sdk";
+import type { WorkspaceAppHostApi, WorkspaceAppBrandLogoLoaderPanelProps } from "@agnx-lab/app-sdk";
 import { HOST_SANDBOX_APP_ID } from "./constants";
 import { peekHostSandboxHost, requireHostSandboxHost } from "./sandbox-host-binding";
 import {

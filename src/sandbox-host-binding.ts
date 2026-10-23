@@ -1,5 +1,5 @@
 // 场景：Host SDK 指南 host 绑定单例；独立模块避免 panel HMR 重载时清空 boundHost。
-import type { WorkspaceAppHostApi } from "@getagnx/app-sdk";
+import type { WorkspaceAppHostApi } from "@agnx-lab/app-sdk";
 
 let boundHost: WorkspaceAppHostApi | null = null;
 

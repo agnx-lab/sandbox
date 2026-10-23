@@ -1,5 +1,5 @@
 // 场景：Host 沙盒子应用入口 — 命令面板打开 + 主面板 Tab + Agent ping 工具。
-import type { WorkspaceAppHostApi, WorkspaceAppModule } from "@getagnx/app-sdk";
+import type { WorkspaceAppHostApi, WorkspaceAppModule } from "@agnx-lab/app-sdk";
 import { BookOpen } from "lucide-react-native";
 import { registerHostSandboxAgentTools } from "./agent-tools";
 import { HOST_SANDBOX_APP_ID, HOST_SANDBOX_COMMAND_OPEN, HOST_SANDBOX_PANEL_ID } from "./constants";
